@@ -94,7 +94,7 @@ There are a lot of operators in R. Let's try a few ones out in our new script !
 Among Arithmetic operators we have:
 
 |  |  |
-|------------------------------------|------------------------------------|
+|----|----|
 | `+`, `-`, `/` and `*` | for addition, subtraction, division and multiplication |
 | `^` | for the exponent |
 | `%%` | for the modulus (the remainder of a division) |
@@ -126,7 +126,7 @@ Go to a new line on your script and type `1==TRUE` and run the line. What happen
 The most common object types in R are:
 
 |  |  |
-|------------------------------------|------------------------------------|
+|----|----|
 | numeric | any number with or without decimals positive or negative will be of the type number |
 | integer | a special case of the numeric type that needs to be specified with the function `as.integer()` |
 | complex | you can create complex number using the function `complex()` |
@@ -655,7 +655,7 @@ You can find them in the **Packages** tab of the bottom right panel, with a hand
 Here are a few libraries that are among the most common and useful:
 
 |  |  |
-|------------------------------------|------------------------------------|
+|----|----|
 | `knitr` | used for report creation |
 | `tidyverse` | collection of packages designed for data manipulation |
 | `ggplot2` | one of the package of the tidyverse used for some beautiful graphs |
