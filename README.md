@@ -1,1 +1,1 @@
-# R_RStudio_the_basics
+# R & RStudio: the basics
