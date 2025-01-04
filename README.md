@@ -1,4 +1,4 @@
 # R & RStudio: the basics
 
-This is the presentation done for the mordev on October 14th, 2024. The main presentation is contained in the HTML file, which you can follow along if you have installed R and RStudio.
-If you want to remake the presentation from scratch, you can download all the files and render the .qmd file inside the R Project.
+This is the presentation about the basics of R and RStudio, done for the mordev of October 14th, 2024 in the LLF lab. The main presentation is contained in the HTML file, and in PDF format. 
+You can also render the presentation yourself by downloading all the files and render the .qmd file inside the R Project.
