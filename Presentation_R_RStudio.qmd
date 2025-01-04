@@ -11,6 +11,10 @@ format:
     center: true
     toc: false
     embed-resources: true
+    pdf-max-pages-per-slide: 1
+  beamer: 
+    fontsize: 8pt
+    theme: metropolis
 editor: visual
 slide-level: 5
 ---
@@ -51,7 +55,7 @@ Now let's open up RStudio. We will immediately go to ***Files \> New Project*** 
 
 You should end up with something looking like this :
 
-![](New_RProject.PNG)
+![Example of a RStudio window](New_RProject.PNG)
 
 ------------------------------------------------------------------------
 
@@ -63,13 +67,13 @@ The RStudio IDE works with panes which you can rearrange. Right now you should h
 
 -   The **Files**, **Plots**, **Packages** and **Help** on the bottom right
 
-![](New_RProject_Panes.PNG)
+![Example of panes](New_RProject_Panes.PNG)
 
 ------------------------------------------------------------------------
 
 Another thing to note is that the project directory is set as the working directory. As you can see underlined below, we are currently in the folder that we've created at the beginning, and we can see the files of that folder in the bottom right panel in the **Files** tab. If you want you can check the working directory by tapping `getwd()` in the console.
 
-![](New_RProject_WD.PNG)
+![Information on the working directory](New_RProject_WD.PNG)
 
 ### Making a R Project
 
@@ -94,7 +98,7 @@ There are a lot of operators in R. Let's try a few ones out in our new script !
 Among Arithmetic operators we have:
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | `+`, `-`, `/` and `*` | for addition, subtraction, division and multiplication |
 | `^` | for the exponent |
 | `%%` | for the modulus (the remainder of a division) |
@@ -126,7 +130,7 @@ Go to a new line on your script and type `1==TRUE` and run the line. What happen
 The most common object types in R are:
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | numeric | any number with or without decimals positive or negative will be of the type number |
 | integer | a special case of the numeric type that needs to be specified with the function `as.integer()` |
 | complex | you can create complex number using the function `complex()` |
@@ -141,7 +145,7 @@ Now let's do some weird ones. What happens if you do `class(NaN)`?
 
 . . .
 
-It's a numeric class since `NaN`stands for "Not a Number"
+It's a numeric class since `NaN` stands for "Not a Number"
 
 . . .
 
@@ -359,13 +363,13 @@ To access the *n^th^* elements of your list you have to use `[[n]]` after your l
 
 Let's switch it up and use a RMarkdown file now. Go to ***File \> New File \> R Markdown***. Give it a title, which will be your document's title, leave the other options by default click on **OK**. You should be on a brand new file and a new tab should appear on the top left pane. It should look like the following:
 
-![](New_RMarkdown_file.PNG)
+![Example of an RMarkdown file in RStudio](New_RMarkdown_file.PNG)
 
 ------------------------------------------------------------------------
 
 You should see that we've kept the same environment as before (since we're inside the same project). You should also see in the section 1 the YAML header which set some overall settings when knitting the document. What is knitting ? Well click on the button **Knit** and you should see your document rendered as a html output, just as specified by the YAML header.
 
-![](New_RMarkdown_file.PNG)
+![Example of an RMarkdown file in RStudio](New_RMarkdown_file.PNG)
 
 ------------------------------------------------------------------------
 
@@ -375,7 +379,7 @@ Below the YAML header you should see in section 2 a "chunk", which is the name o
 You can use the setup chunk to make sure you load the packages necessary for your code.
 :::
 
-![](New_RMarkdown_file.PNG)
+![Example of an RMarkdown file in RStudio](New_RMarkdown_file.PNG)
 
 #### Running a R script in a RMarkdown file
 
@@ -416,7 +420,7 @@ if(<condition 2 is met>){
 } 
 ```
 
-. . .
+------------------------------------------------------------------------
 
 I you want to apply something only whenever the previous condition is not met, use `else`.
 
@@ -531,6 +535,8 @@ With `grep()` and all of its associated function, "regular expressions" can be u
 
 But what if you wanted `grep()` to return the matching argument rather than its indices ?
 
+------------------------------------------------------------------------
+
 If you write `?grep`, your bottom right panel should turn to the **Help** page for that function (you can also directly use the search function of that tab). In all of this you will find an optional parameter called *value*. Can you see now what needs to be changed in our previous function ?
 
 . . .
@@ -581,9 +587,9 @@ Try to create a function that will take one vector as an input. If that vector i
 You should name your function using by describing what it does. You should also use the function `warning()` inside your function if you want to clarify to the user what he may be doing wrong.
 :::
 
-. . .
+------------------------------------------------------------------------
 
-``` roff
+``` r
 print_or_avg <- function(a_vector){
   if(is.character(a_vector)){print(a_vector)}
   else if(is.numeric(a_vector)){mean(a_vector)}
@@ -619,7 +625,7 @@ ipak <- function(pkg, load_pkg = T){
 }
 ```
 
-. . .
+------------------------------------------------------------------------
 
 ``` r
 # ipak function: install and load multiple R packages.
@@ -655,7 +661,7 @@ You can find them in the **Packages** tab of the bottom right panel, with a hand
 Here are a few libraries that are among the most common and useful:
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | `knitr` | used for report creation |
 | `tidyverse` | collection of packages designed for data manipulation |
 | `ggplot2` | one of the package of the tidyverse used for some beautiful graphs |
