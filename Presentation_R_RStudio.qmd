@@ -55,7 +55,7 @@ Now let's open up RStudio. We will immediately go to ***Files \> New Project*** 
 
 You should end up with something looking like this :
 
-![Example of a RStudio window](New_RProject.PNG)
+![Example of a RStudio window](Images/New_RProject.PNG)
 
 ------------------------------------------------------------------------
 
@@ -67,13 +67,13 @@ The RStudio IDE works with panes which you can rearrange. Right now you should h
 
 -   The **Files**, **Plots**, **Packages** and **Help** on the bottom right
 
-![Example of panes](New_RProject_Panes.PNG)
+![Example of panes](Images/New_RProject_Panes.PNG)
 
 ------------------------------------------------------------------------
 
 Another thing to note is that the project directory is set as the working directory. As you can see underlined below, we are currently in the folder that we've created at the beginning, and we can see the files of that folder in the bottom right panel in the **Files** tab. If you want you can check the working directory by tapping `getwd()` in the console.
 
-![Information on the working directory](New_RProject_WD.PNG)
+![Information on the working directory](Images/New_RProject_WD.PNG)
 
 ### Making a R Project
 
@@ -363,13 +363,13 @@ To access the *n^th^* elements of your list you have to use `[[n]]` after your l
 
 Let's switch it up and use a RMarkdown file now. Go to ***File \> New File \> R Markdown***. Give it a title, which will be your document's title, leave the other options by default click on **OK**. You should be on a brand new file and a new tab should appear on the top left pane. It should look like the following:
 
-![Example of an RMarkdown file in RStudio](New_RMarkdown_file.PNG)
+![Example of an RMarkdown file in RStudio](Images/New_RMarkdown_file.PNG)
 
 ------------------------------------------------------------------------
 
 You should see that we've kept the same environment as before (since we're inside the same project). You should also see in the section 1 the YAML header which set some overall settings when knitting the document. What is knitting ? Well click on the button **Knit** and you should see your document rendered as a html output, just as specified by the YAML header.
 
-![Example of an RMarkdown file in RStudio](New_RMarkdown_file.PNG)
+![Example of an RMarkdown file in RStudio](Images/New_RMarkdown_file.PNG)
 
 ------------------------------------------------------------------------
 
@@ -379,7 +379,7 @@ Below the YAML header you should see in section 2 a "chunk", which is the name o
 You can use the setup chunk to make sure you load the packages necessary for your code.
 :::
 
-![Example of an RMarkdown file in RStudio](New_RMarkdown_file.PNG)
+![Example of an RMarkdown file in RStudio](Images/New_RMarkdown_file.PNG)
 
 #### Running a R script in a RMarkdown file
 
@@ -684,13 +684,13 @@ Quarto is the new all-in-one solution proposed by POSIT to create presentations,
 ::: {.column width="50%"}
 What is needed to create a R Markdown file:
 
-![](for_RMarkdown.PNG)
+![](Images/for_RMarkdown.PNG)
 :::
 
 ::: {.column width="50%"}
 What is needed to create a Quarto document:
 
-![](for_quarto.PNG)
+![](Images/for_quarto.PNG)
 :::
 :::::
 
